@@ -4,7 +4,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String group;
-    protected double averageMark;
+    private double averageMark;
 
     public String getFirstName() {
         return firstName;
