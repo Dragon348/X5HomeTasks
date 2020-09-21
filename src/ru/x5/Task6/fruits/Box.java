@@ -5,13 +5,15 @@ import ru.x5.Task6.mylist.MyList;
 
 public class Box {
     private MyList<Fruit> fruits = new MyArrayList<>();
-
+    private int fruitCount = 0;
     public boolean add(Fruit fruit) {
         if (fruits.size() == 0) {
             fruits.add(fruit);
+            fruitCount++;
             return true;
         } else if (fruit.getClass().equals(fruits.get(0).getClass())) {
             fruits.add(fruit);
+            fruitCount++;
             return true;
         } else {
             System.out.println("Невозможно добавить " + fruit + " в коробку с " + fruits.get(0));
