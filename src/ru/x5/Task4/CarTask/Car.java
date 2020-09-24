@@ -1,10 +1,10 @@
 package ru.x5.Task4.CarTask;
 
 public abstract class Car {
-    String mark;
-    String carClass;
-    Double weight;
-    Engine motor;
+    private String mark;
+    private String carClass;
+    private Double weight;
+    private Engine motor;
 
     public Car(String mark, String carClass, Double weight, Engine motor) {
         this.mark = mark;
@@ -29,6 +29,6 @@ public abstract class Car {
         System.out.println("Марка: " + this.mark);
         System.out.println("Класс авто:" + this.carClass);
         System.out.println("Вес авто:" + this.weight);
-        System.out.println("Производитель мотора: " + motor.producer + ". Мощность мотора: " + motor.power);
+        System.out.println("Производитель мотора: " + motor.getProducer() + ". Мощность мотора: " + motor.getPower());
     }
 }

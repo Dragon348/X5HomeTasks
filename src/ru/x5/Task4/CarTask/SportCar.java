@@ -1,7 +1,7 @@
 package ru.x5.Task4.CarTask;
 
 public class SportCar extends Car {
-    int maxSpeed;
+    private int maxSpeed;
 
     public SportCar(String mark, String carClass, Double weight, Engine motor, int maxSpeed) {
         super(mark, carClass, weight, motor);
@@ -22,5 +22,9 @@ public class SportCar extends Car {
     public void printInfo() {
         super.printInfo();
         System.out.println("Предельная скорость: " + maxSpeed);
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
     }
 }

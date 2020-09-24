@@ -1,7 +1,7 @@
 package ru.x5.Task4.CarTask;
 
 public class Lorry extends Car {
-    int maxWeigth;
+    private int maxWeigth;
 
     public Lorry(String mark, String carClass, Double weight, Engine motor, int maxWeigth) {
         super(mark, carClass, weight, motor);
@@ -22,5 +22,9 @@ public class Lorry extends Car {
     public void printInfo() {
         super.printInfo();
         System.out.println("Предельная скорость: " + maxWeigth);
+    }
+
+    public int getMaxWeigth() {
+        return maxWeigth;
     }
 }
