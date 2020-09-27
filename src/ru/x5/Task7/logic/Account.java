@@ -26,4 +26,8 @@ public class Account {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+    @Override
+    public String toString(){
+        return "Текущий баланс счёта " + this.getId() + ". Держатель " + this.getHolder() + ": " + this.getAmount();
+    }
 }
